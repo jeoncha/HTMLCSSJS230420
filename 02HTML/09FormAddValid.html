@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+        Form : 사용자로부터 특정 정보를 받아 서버로 전달하는데 사용되는 태그
+        action 속성 : 전달받는 서버 페이지(URL)
+        method 속성 : 서버로 요청시 전달하는 방식
+        Get : 사용자정보를 Query String으로 전달 (기본값)
+        Post : 사용자정보를 Request boby(Payload)로 전달
+
+     -->
+    <form action="test.jsp" method="get">
+        <div>
+            <label for="username">이름 :</label> <input type="text" name="username" id="username" required/>
+        </div>
+        <div>
+            <label for="age">나이 :</label> <input type="text" name="age" id="age" required/><br/>
+        </div>
+        <div>
+            <label for="addr">주소 :</label> <input type="text" name="addr" id="addr" requireds/><br/>
+        </div>
+        <div>
+            <label for="usermail">메일 :</label> <input type="email" name="usermail" id="usermail" disabled/> <br/>
+        </div>
+        <div>
+            <label for="password">패스 워드 :</label> 
+            <input 
+            type="password" 
+            name="password" 
+            placeholder="Insert Password"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#]).{10,18}" 
+            oninvalid="this.setCustomValidity('영문소문자/대문자/특수문자/숫자중 3개이상 포함하고 길이는 10-18자 사이이어야합니다');" required/>
+        </div>
+        <div>
+            <laber>성별 : </laber><input type="radio" name="gender" value="man"> 남 <input type="radio" name="gender" value="woman"> 여 <br/>
+        </div>
+        <div>
+        <label>취미 :</label> 
+        <p>
+            <input type="checkbox" name="hobby" value="climing">등산&nbsp;
+            <input type="checkbox" name="hobby" value="golf">골프&nbsp;
+            <input type="checkbox" name="hobby" value="reading">독서&nbsp;
+            <input type="checkbox" name="hobby" value="swimming">수영&nbsp;
+        </p>
+        </div>
+        <div>
+        <label>메모 :</label>
+            <textarea cols="35" rows="15" name="memo" style="resize: none;" ></textarea>
+        </div>
+        <div>
+        <label>PHONE:</label>
+            <input type="tel" pattern="[0]{1}[0-9]{2}" required />
+            <span> - </span>
+            <input type="tel" pattern="[0-9]{3,4}" required/>
+            <span> - </span>
+            <input type="tel" pattern="[0-9]{4}" required/>
+        </div>
+
+        <input type="submit" />
+    </form>
+    
+</body>
+</html>
