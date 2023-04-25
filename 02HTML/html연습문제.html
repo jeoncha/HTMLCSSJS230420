@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <label>고객명 : </label><input type="text" />
+    </div>
+    <div>
+        <label>전화번호 : </label><input type="text" />
+    </div>
+    <div>
+        <label>E-mail : </label><input type="email" />
+    </div>
+    <div>
+        <label>피자선택:</label>
+        <select name="피자선택">
+            <option value="선택">피자를 선택하세요</option>
+            <option value="불고기">불고기피자</option>
+            <option value="포테이토">포테이토피자</option>
+            <option value="디럭스">디럭스피자</option>
+        </select>
+    </div>
+    <fieldset>
+        <legend>피자 사이즈</legend>
+        <input type="radio" value="Small">Samll&nbsp;<br/>
+        <input type="radio" value="Small">Medium&nbsp;<br/>
+        <input type="radio" value="Small">Large&nbsp;<br/>
+    </fieldset>
+
+    <fieldset>
+        <legend>토핑 선택</legend>
+        <input type="checkbox" value="베이컨">베이컨 &nbsp;<br/>
+        <input type="checkbox" value="치즈">치즈 &nbsp;<br/>
+        <input type="checkbox" value="양파">양파 &nbsp;<br/>
+        <input type="checkbox" value="버섯">버섯 &nbsp;<br/>
+    </fieldset>
+    <br/>
+    <div>
+        <label>배송시 요청사항 : </label>
+        <textarea cols="25" rows="5"></textarea>
+    </div>
+    <input type="submit" value="주문하기">
+
+</body>
+</html>
