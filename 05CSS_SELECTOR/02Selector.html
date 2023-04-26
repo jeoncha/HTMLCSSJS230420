@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 자식선택자 */
+        .parent>div{
+            border: 1px solid gray;
+        }
+        .parent>div>div{
+            font-size: 0.8rem;
+            color: brown;
+        }
+        .parent>p{
+            background-color: orange;
+        }
+        /* 자손선택자 : 공백 */
+        .parent div{
+            width: 200px;
+            background-color: rosybrown;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <DIV class="child">
+            <div>1 HELLOWORLD</div>
+            <DIV>2 HELLOWORLD</DIV>
+            <div>3 HELLOWORLD</div>
+        </div>
+        <DIV>4 HELLOWORLD</DIV>
+        <p>5 HELLOWORLD</p>
+    </div>
+    
+</body>
+</html>
