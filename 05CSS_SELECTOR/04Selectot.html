@@ -12,9 +12,9 @@
         }
         .btn{
             display: block;
-            width: 150px;
-            height: 50px;
-            line-height: 50px;
+            width: 130px;
+            height: 40px;
+            line-height: 40px;
             text-align: center;
             border-radius: 20px;
             color: white;
@@ -39,6 +39,7 @@
             opacity: 0.8;
         }
         .btn:visited{
+            color: black;
             background-color: brown;
         }
         /* 그라데이션 주는 거 */
@@ -94,7 +95,7 @@
         const txtE1 = document.querySelector('.txt');
         chkE1.addEventListener('change', function(){
             //alert("동장확인!");
-            if(this.checkde){
+            if(this.checked){
                 txtE1.disabled = false;
             }
             else{
